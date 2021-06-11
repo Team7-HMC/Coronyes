@@ -11,5 +11,5 @@ p,h1,h2 {
 .content {
     height: 200px;
     background-color: red;
-    background-image: linear-gradient(to right, red , yellow);
+    background-image: linear-gradient(to right, #93e3ee , #0dd4fe);
 }
