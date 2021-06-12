@@ -40,6 +40,15 @@ li {
   padding: 5px;
 }
 
+#prevent {
+  height: 100vh;
+}
+
+#prevent .box img {
+  width: 80px;
+  height: 80px;
+}
+
 .hero .content h2 {
   font-size: 45px;
   font-weight: 300;
@@ -101,6 +110,35 @@ ul {
   margin: 0 10px;
   padding: 10px;
   border-radius: 20px;
+}
+
+#prevent .box .bg-box h3 {
+  color: rgb(31, 182, 107);
+}
+
+#prevent .box .bg-box img {
+  width: 160px;
+  height: 160px;
+}
+
+#prevent .box .bg-box p {
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+}
+
+#prevent .box .bg-box {
+  margin-top: 50px;
+  height: 400px;
+  width: 250px;
+  box-shadow: 0px 0px 10px rgb(230, 227, 227);
+  transition-duration: 0.4s;
+}
+
+#prevent .box .bg-box:hover {
+  margin-top: 40px;
+  background-color: #ffffff;
+  border-bottom: 6px solid red;
 }
 
 #prevent .box .bg-box p {
@@ -168,4 +206,13 @@ footer .info {
   width: 80%;
   margin: auto;
   justify-content: space-between;
+}
+
+/* font */
+.roboto {
+  font-family: "Montserrat", sans-serif;
+}
+
+.rubik {
+  font-family: "Rubik", sans-serif;
 }
