@@ -1,47 +1,112 @@
 body {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
-p,h1,h2 {
-    padding: 0;
-    margin: 0;
+p,
+h1,
+h2,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
 }
 
 .hero {
-    height: 100%;
-    background-color: red;
-    background-image: linear-gradient(to right, #93e3ee , #0dd4fe);
-    background-size: cover;
+  height: 100%;
+  background-color: red;
+  background-image: linear-gradient(to right, #93e3ee, #0dd4fe);
+  background-size: cover;
 }
 
-#prevent{
-    height: 100vh;
+#prevent {
+  height: 100vh;
 }
 
-#prevent .box  img{
-    width: 80px;
-    height: 80px;
+#prevent .box img {
+  width: 80px;
+  height: 80px;
 }
 
-#prevent .box{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
+#prevent .box {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
 }
 
-#prevent .box .bg-box{
-    background-color: rgb(185, 224, 236);
-    margin: 0 10px;
-    padding: 10px;
-    border-radius: 20px;
+#prevent .box .bg-box {
+  background-color: rgb(185, 224, 236);
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 20px;
 }
 
 #prevent .box .bg-box p {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
-
 .text-center {
-    text-align: center;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  margin: auto;
+  /* height: 40vh; */
+  background-color: rebeccapurple;
+  color: white;
+  padding: 20px 0;
+  box-sizing: border-box;
+}
+
+footer .subscribe {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  height: 120px;
+  justify-content: space-between;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+footer .subscribe input {
+  margin-top: 2px;
+  height: 30px;
+  border-radius: 20px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  border: 0px;
+}
+
+footer .subscribe .send {
+  width: 80px;
+  position: relative;
+  height: 30px;
+  right: 16px;
+  background-color: royalblue;
+  border: 0;
+  border-radius: 0 10px 10px 0;
+  color: white;
+}
+
+footer .subscribe .send:hover {
+  background-color: teal;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+footer .subscribe input:focus {
+  outline: none;
+}
+
+footer .info {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
 }
