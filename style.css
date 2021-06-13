@@ -225,16 +225,44 @@ ul {
   height: 60px;
 }
 
-/* prevent */
+/* artikel-list */
+#artikel-list{
+  width: 90%;
+  margin: auto;
+}
+#artikel-list .box1 .img img{
+  width:250px ;
+  height: 200px;
+  
+}
+#artikel-list .box1{
+  width:250px ;
+  height: 400px;
+  background-color: #ffffff;
+  margin: 0 25px;
+}
 
+#artikel-list .inti{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+
+/* prevent */
 #prevent {
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #prevent .box img {
   width: 80px;
   height: 80px;
 }
+
 
 #prevent .box {
   display: flex;
