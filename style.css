@@ -9,6 +9,7 @@ body {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   background-image: linear-gradient(to right, #4701b8, #0d25fe);
   background-repeat: no-repeat;
+  background-size:100%;
 }
 
 p,
@@ -155,11 +156,17 @@ ul {
   flex-direction: row;
 }
 
+.img-covid1 {
+  width: 50%;
+  padding: 50px 0;
+ margin-left: -50px;
+}
+
 .about .about-content {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  margin-left: 50px;
+  margin-left: 40px;
 }
 
 .about .about-content h1 {
@@ -363,11 +370,12 @@ footer .footer {
 }
 
 .article {
+  background-size: 1000px;
   background-color: white;
   color: black;
-  width: 80%;
+  width: 90%;
   margin: auto;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
 .article .article-title {
