@@ -75,4 +75,71 @@ li {
 // LOGIN
 
 .login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .box {
+    height: 80%;
+    width: 80%;
+    display: flex;
+    border: 0;
+    justify-content: space-around;
+    box-shadow: 0 0 10px gray;
+    border-radius: 15px;
+   
+    .image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-details{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    
+      h2{
+        text-align: left;
+        font-size: 40px;
+        color: rgb(21, 109, 116);
+      }
+  
+      form {
+        width: 100%;
+        .input-details {
+          width: 100%;
+          border:0px;
+          // height: 20px;
+          padding: 10px 0;
+          outline: none;
+          border-bottom: 1px solid black;
+        }
+
+        button{
+          margin-top: 20px;
+          width: 100%;
+          padding: 12px 0;
+          border: none;
+          background-color: #2979ff;
+          font-size: 20px;
+          color: #fafafa;
+          border-radius: 5px;
+
+          &:hover {
+            background-image: linear-gradient(to right, #4701b8, #0d25fe);
+            // background-color: #2979ff;
+            transition: .5s;
+            cursor: pointer;
+          }
+        }
+        
+      }
+
+    }
+  }
+
+  
 }

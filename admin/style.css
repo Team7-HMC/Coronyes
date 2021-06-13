@@ -76,4 +76,96 @@ li {
   font-weight: bold;
   color: #009879;
 }
+
+.login {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login .box {
+  height: 80%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-shadow: 0 0 10px gray;
+          box-shadow: 0 0 10px gray;
+  border-radius: 15px;
+}
+
+.login .box .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login .box .login-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login .box .login-details h2 {
+  text-align: left;
+  font-size: 40px;
+  color: #156d74;
+}
+
+.login .box .login-details form {
+  width: 100%;
+}
+
+.login .box .login-details form .input-details {
+  width: 100%;
+  border: 0px;
+  padding: 10px 0;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+.login .box .login-details form button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  background-color: #2979ff;
+  font-size: 20px;
+  color: #fafafa;
+  border-radius: 5px;
+}
+
+.login .box .login-details form button:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#4701b8), to(#0d25fe));
+  background-image: linear-gradient(to right, #4701b8, #0d25fe);
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
