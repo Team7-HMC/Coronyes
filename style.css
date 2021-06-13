@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -16,19 +20,34 @@ li {
   margin: 0;
 }
 
-.hero {
-  padding: 0 35px;
+a {
+  color: white;
+  text-decoration: none;
 }
 
-.header {
-  padding: 40px 70px;
+/* font */
+.roboto {
+  font-family: "Montserrat", sans-serif;
+}
+
+.rubik {
+  font-weight: 800;
+  color: white;
+  text-align: center;
+}
+
+/* header */
+header {
+  height: 100px;
   color: white;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  line-height: 100px;
 }
 
-.header h2 {
+header h2 {
   font-size: 20px;
 }
 
@@ -37,21 +56,27 @@ header ul li {
   text-align: center;
 }
 
-ul.menu {
+header ul.menu {
   display: flex;
   flex-direction: row;
   cursor: pointer;
 }
 
-ul li:hover {
+header ul li:hover {
   color: #00e200;
   transition: 0.5s ease-in-out;
+}
+
+/* hero */
+.hero {
+  width: 90%;
+  margin: auto;
+  height: 100vh;
 }
 
 .hero .content {
   padding: 40px 20px;
   display: flex;
-  /* flex-wrap: wrap; */
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -95,7 +120,7 @@ ul li:hover {
 
 .button {
   border: none;
-  color: black;
+  color: white;
   padding: 10px 25px;
   text-align: center;
   text-decoration: none;
@@ -104,20 +129,57 @@ ul li:hover {
   margin: 20px 6px;
   cursor: pointer;
   border-radius: 20px;
+  background-image: linear-gradient(to left, #4701b8, #0d25fe);
 }
 
 .button:hover {
   color: white;
   background-image: linear-gradient(to right, #4701b8, #0d25fe);
-  transition: 0.5s ease-in-out;
+  box-shadow: 1px 1px 20px #260064;
+  transition: 0.2s ease-in-out;
 }
 
 ul {
   list-style: none;
 }
 
-#prevent {
+/* domain */
+
+#domain {
+  width: 80%;
+  margin: auto;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+
+#domain .list-domain {
+  flex-direction: row;
+  display: flex;
+}
+
+#domain .list-domain .list-bg {
+  background-color: white;
+  padding: 20px;
+  margin-left: 2px;
+  color: black;
+}
+
+#domain .list-domain .list-bg .list-bg-details {
+  position: relative;
+  background-color: yellow;
+  left: 0;
+  top: 0;
+  height: 60px;
+}
+
+/* prevent */
+
+#prevent {
+  margin-top: 20px;
 }
 
 #prevent .box img {
@@ -175,12 +237,47 @@ ul {
   text-align: center;
 }
 
+/* contact-us */
+#contact-us {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  /* flex-direction: column; */
+}
+
+#contact-us form {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-us form input {
+  width: 80%;
+  height: 40px;
+  border-radius: 40px;
+  border: 0px;
+  outline: none;
+  margin-right: 10px;
+}
+
+#contact-us form textarea {
+  margin-top: 10px;
+  border-radius: 40px;
+  outline: none;
+  width: 100%;
+}
+
+#contact-us form .input-details {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
 /* Footer */
 footer {
   margin: auto;
   border-top: 4px solid #eee;
-  /* height: 40vh; */
-  /* background-color: rebeccapurple; */
   color: white;
   padding: 20px 0;
   box-sizing: border-box;
@@ -197,36 +294,6 @@ footer .subscribe {
   box-sizing: border-box;
 }
 
-footer .subscribe input {
-  margin-top: 2px;
-  height: 30px;
-  border-radius: 20px;
-  padding-left: 10px;
-  box-sizing: border-box;
-  border: 0px;
-}
-
-footer .subscribe .send {
-  width: 80px;
-  position: relative;
-  height: 30px;
-  right: 16px;
-  background-color: royalblue;
-  border: 0;
-  border-radius: 0 10px 10px 0;
-  color: white;
-}
-
-footer .subscribe .send:hover {
-  background-color: teal;
-  cursor: pointer;
-  transition: 0.4s ease-in-out;
-}
-
-footer .subscribe input:focus {
-  outline: none;
-}
-
 footer .info {
   display: flex;
   width: 80%;
@@ -234,13 +301,9 @@ footer .info {
   justify-content: space-between;
 }
 
-/* font */
-.roboto {
-  font-family: "Montserrat", sans-serif;
-}
-
-.rubik {
-  font-weight: 800;
-  color: white;
+footer .footer {
+  height: 60px;
+  line-height: 60px;
+  font-size: 12px;
   text-align: center;
 }
