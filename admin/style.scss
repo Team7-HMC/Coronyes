@@ -21,12 +21,36 @@ li {
   margin: 0;
 }
 
+li {
+  list-style: none;
+}
+
+header {
+  height: 100px;
+  line-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  border-bottom: 2px solid black;
+
+  nav {
+    ul li {
+      display: inline-block;
+      width: 80px;
+      text-align: center;
+      a {
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
 .articles {
   display: flex;
-  height: 100vh;
   margin: auto;
   width: 90%;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
 }
