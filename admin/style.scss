@@ -21,12 +21,36 @@ li {
   margin: 0;
 }
 
+li {
+  list-style: none;
+}
+
+header {
+  height: 100px;
+  line-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  border-bottom: 2px solid black;
+
+  nav {
+    ul li {
+      display: inline-block;
+      width: 80px;
+      text-align: center;
+      a {
+        color: black;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
 .articles {
   display: flex;
-  height: 100vh;
   margin: auto;
   width: 90%;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
 }
@@ -128,7 +152,7 @@ li {
           color: #fafafa;
           border-radius: 5px;
 
-          &:hover {
+          &:hover { 
             background-image: linear-gradient(to right, #4701b8, #0d25fe);
             // background-color: #2979ff;
             transition: .5s;
@@ -139,7 +163,22 @@ li {
       }
 
     }
+  }  
+}
+
+#input-article {
+  width: 100%;
+  margin: 0 5%;
+
+  .input1 input{
+    width: 87%;
   }
 
-  
+  .input2 textarea{
+    margin-top: 20px;
+  }
+
+  .input2 label{
+    margin-top: 500px;
+  }
 }
