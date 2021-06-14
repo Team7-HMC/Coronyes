@@ -112,37 +112,37 @@ header {
     justify-content: space-around;
     box-shadow: 0 0 10px gray;
     border-radius: 15px;
-   
+
     .image {
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
-    .login-details{
+    .login-details {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
-    
-      h2{
+
+      h2 {
         text-align: left;
         font-size: 40px;
         color: rgb(21, 109, 116);
       }
-  
+
       form {
         width: 100%;
         .input-details {
           width: 100%;
-          border:0px;
+          border: 0px;
           // height: 20px;
           padding: 10px 0;
           outline: none;
           border-bottom: 1px solid black;
         }
 
-        button{
+        button {
           margin-top: 20px;
           width: 100%;
           padding: 12px 0;
@@ -152,33 +152,51 @@ header {
           color: #fafafa;
           border-radius: 5px;
 
-          &:hover { 
+          &:hover {
             background-image: linear-gradient(to right, #4701b8, #0d25fe);
             // background-color: #2979ff;
-            transition: .5s;
+            transition: 0.5s;
             cursor: pointer;
           }
         }
-        
       }
-
     }
-  }  
+  }
 }
 
 #input-article {
-  width: 100%;
-  margin: 0 5%;
+  width: 90%;
+  margin: auto;
 
-  .input1 input{
-    width: 87%;
+  form {
+    width: 100%;
+    // background-color: rebeccapurple;
   }
 
-  .input2 textarea{
-    margin-top: 20px;
-  }
+  .input-box {
+    input {
+      width: 100%;
+      padding: 8px 0;
+      margin: 10px 0;
+    }
 
-  .input2 label{
-    margin-top: 500px;
+    textarea {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  .btn-save {
+    text-align: end;
+    padding: 10px 40px;
+    border: 0px;
+    color: white;
+    background-color: #009879;
+    border-radius: 4px;
+
+    &:hover {
+      transition: 0.5s ease-in-out;
+      background-image: linear-gradient(to left, #009879, #027c64);
+      cursor: pointer;
+    }
   }
 }

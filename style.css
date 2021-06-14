@@ -206,11 +206,18 @@ ul {
   margin: auto;
   margin-bottom: 20px;
 }
+#artikel-list h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+  font-size: 30px;
+}
 #artikel-list .box1 .img img {
   width: 250px;
   height: 200px;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
 }
+
 #artikel-list .box1 {
   width: 250px;
   height: 400px;
@@ -221,17 +228,17 @@ ul {
   transition-duration: 0.4s;
 }
 
-#artikel-list .box1:hover{
+#artikel-list .box1:hover {
   margin-top: 20px;
   border-bottom: 5px solid red;
 }
 
-#artikel-list .box1 .img h6{
+#artikel-list .box1 .img h6 {
   color: rgb(110, 108, 108);
   padding-left: 15px;
 }
 
-#artikel-list .box1 .img p{
+#artikel-list .box1 .img p {
   font-size: 14px;
   padding: 0 15px;
   text-align: justify;
@@ -244,14 +251,13 @@ ul {
   flex-wrap: wrap;
 }
 
-#artikel-list .box1 .img a{
+#artikel-list .box1 .img a {
   color: black;
   padding: 0 15px;
   display: inline-block;
   margin-top: 20px;
   text-align: right;
 }
-
 
 /* prevent */
 #prevent {
@@ -366,11 +372,10 @@ ul {
 }
 
 #tentang-kami h1 {
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
   padding: 20px;
   color: #eee;
-  font-family: "Montserrat", sans-serif;
 }
 
 #tentang-kami .about-us {

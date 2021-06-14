@@ -189,25 +189,45 @@ header nav ul li a {
 .login .box .login-details form button:hover {
   background-image: -webkit-gradient(linear, left top, right top, from(#4701b8), to(#0d25fe));
   background-image: linear-gradient(to right, #4701b8, #0d25fe);
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   cursor: pointer;
 }
 
 #input-article {
+  width: 90%;
+  margin: auto;
+}
+
+#input-article form {
   width: 100%;
-  margin: 0 5%;
 }
 
-#input-article .input1 input {
-  width: 87%;
+#input-article .input-box input {
+  width: 100%;
+  padding: 8px 0;
+  margin: 10px 0;
 }
 
-#input-article .input2 textarea {
-  margin-top: 20px;
+#input-article .input-box textarea {
+  width: 100%;
+  margin: 10px 0;
 }
 
-#input-article .input2 label {
-  margin-top: 500px;
+#input-article .btn-save {
+  text-align: end;
+  padding: 10px 40px;
+  border: 0px;
+  color: white;
+  background-color: #009879;
+  border-radius: 4px;
+}
+
+#input-article .btn-save:hover {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  background-image: -webkit-gradient(linear, right top, left top, from(#009879), to(#027c64));
+  background-image: linear-gradient(to left, #009879, #027c64);
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
